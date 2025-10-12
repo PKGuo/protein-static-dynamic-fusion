@@ -1,0 +1,22 @@
+_target_: 'src.models.regnn.REGNNNodeClassifier.REGNNNodeClassifier'
+in_dim: 21
+hidden_dim: 64
+out_dim: 2
+lr: 1e-3
+num_relations: 2
+num_gnn_layers: 5
+num_fc_layers: 2
+dropout: 0.1
+gnn_dropout: 0.0
+node_agg: 'sum'
+coords_agg: 'mean'
+attention: False
+normalize: False
+tanh: False
+use_edge_attr: False
+edge_attr_dim: 1
+use_class_weights: False
+norm: 'bn'
+residual: True
+log_every_step: False
+update_coords: False  # Set to False to disable coordinate updates

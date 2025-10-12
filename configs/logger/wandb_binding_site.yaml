@@ -1,0 +1,3 @@
+project: test_binding_site_prediction
+entity: pguo # your wandb entity
+save_dir: {hydra.run.dir}

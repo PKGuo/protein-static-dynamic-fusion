@@ -1,0 +1,10 @@
+_target_: src.data.atom_adaptability_datamodule.AtomAdaptabilityDataModule
+
+graph_h5_path: 'data/data_files/atom_graph_OnlyProtein_distance_4.5_corr_aligned_0.6.h5'
+pdb_list_train_path: 'data/splits/adaptability/train.txt' 
+pdb_list_val_path: 'data/splits/adaptability/val.txt' 
+pdb_list_test_path: 'data/splits/adaptability/test.txt' 
+
+batch_size: 32
+num_workers: 1
+graph_type: ${graph_type}  # Use the graph_type from default.yaml

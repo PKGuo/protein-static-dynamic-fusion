@@ -1,0 +1,15 @@
+_target_: 'src.models.rgat.RGATNodeClassifier.RGATNodeClassifier'
+in_dim: 21
+hidden_dim: 64
+# out_dim: 1
+lr: 1e-4
+num_relations: 2
+num_classes: 2  # For binary classification
+num_gnn_layers: 5 
+num_fc_layers: 2 
+concat: False
+use_edge_attr: True
+gnn_dropout: 0.0 
+dropout: 0.1
+norm: 'bn'
+use_class_weights: False

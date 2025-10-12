@@ -1,0 +1,15 @@
+_target_: 'src.models.relgps.RelGPSConvNodeClassifier.GPSConvNodeClassifier'
+in_dim: 21
+hidden_dim: 64
+out_dim: 2
+lr: 1e-3
+num_relations: 2
+num_gnn_layers: 5
+num_fc_layers: 2
+dropout: 0.1
+heads: 4
+attn_type: 'multihead'
+norm: 'batch_norm'
+use_class_weights: False
+log_every_step: False
+local_gnn_type: 'rgcn'  # 新增参数，默认为rgcn

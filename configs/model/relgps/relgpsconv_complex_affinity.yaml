@@ -1,0 +1,17 @@
+_target_: 'src.models.relgps.RelGPSConv_complex_affinity.GPSConv_complex_affinity'
+in_dim: 50
+hidden_dim: 64
+out_dim: 1
+lr: 1e-4
+num_relations: 2
+num_gnn_layers: 5
+num_fc_layers: 2
+dropout: 0.1
+heads: 4
+pooling: 'mean'
+attn_type: 'multihead'
+norm: 'batch_norm'
+use_ls: False
+ex_ls_gamma: 1.0
+log_every_step: False
+local_gnn_type: 'rgcn'  # 新增参数，默认为rgcn

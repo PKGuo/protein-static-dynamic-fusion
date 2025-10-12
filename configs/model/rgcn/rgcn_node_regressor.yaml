@@ -1,0 +1,7 @@
+_target_: src.models.rgcn.RGCNNodeRegressor.RGCNNodeRegressor
+in_dim: 10  # Adjust based on your node feature size
+hidden_dim: 64
+num_relations: 2  # For combined graph
+lr: 1e-4
+num_gnn_layers: 5
+num_fc_layers: 2

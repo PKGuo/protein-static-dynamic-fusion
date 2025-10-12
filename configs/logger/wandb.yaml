@@ -1,0 +1,3 @@
+project: your_project_name
+entity: your_wandb_entity
+save_dir: {hydra.run.dir}

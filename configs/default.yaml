@@ -1,0 +1,38 @@
+name: auto
+load_from_checkpoint: null
+test_model: True
+
+seed: 42 # Random seed
+
+trainer:
+  epochs: 200
+  val_interval: 1.0
+  log_steps: 1
+  accumulate_grad_batches: 4
+  eval_metrics: val/loss
+  gradient_clip_val: 0
+callbacks:
+  checkpointing:
+    checkpoint_freq: 1
+    save_top_k: 2
+  roc_curve: True
+
+defaults:
+ - logger: wandb_adaptability 
+ - datamodule: atom_adaptability_datamodule_aligned #  residue_datamodule  #
+ - model: rgcn/rgcn_node_regressor_nr_2  
+ - _self_
+
+graph_type: "combined"  
+
+enable_wandb: false  
+
+# Hydra configuration
+hydra:
+  job:
+    chdir: false  # Don't change working directory - fixes module import issues
+  run:
+    dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}

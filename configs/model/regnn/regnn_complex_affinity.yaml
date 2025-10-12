@@ -1,0 +1,23 @@
+_target_: 'src.models.regnn.REGNN_complex_affinity.REGNN_complex_affinity'
+in_dim: 50
+hidden_dim: 64
+out_dim: 1
+lr: 1e-4
+num_relations: 2
+edge_attr_dim: 1
+num_gnn_layers: 5 
+num_fc_layers: 2 
+dropout: 0.1
+pooling: 'mean'
+node_agg: 'sum'
+coords_agg: 'mean'
+attention: False
+normalize: False
+tanh: False
+use_edge_attr: False
+norm: 'bn'
+residual: True
+use_ls: False
+ex_ls_gamma: 1.0
+log_every_step: False
+update_coords: False  # Set to False to disable coordinate updates

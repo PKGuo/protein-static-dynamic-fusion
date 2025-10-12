@@ -1,0 +1,10 @@
+_target_: src.data.md_datamodule_logkdki.LogKdKiDataModule
+
+graph_path: "data/data_files/atom_graph_BindingSiteAndLigand_distance_4.5_corr_aligned_0.6.h5" 
+pdb_list_train: "data/splits/affinity/refined_remove_core_filtered_train_with_binding_site.pickle"
+pdb_list_val: "data/splits/affinity/refined_remove_core_filtered_val_with_binding_site.pickle"
+pdb_list_test: "data/splits/affinity/core_filtered_with_binding_site.pickle"
+
+batch_size: 32
+num_workers: 1
+graph_type: ${graph_type}  

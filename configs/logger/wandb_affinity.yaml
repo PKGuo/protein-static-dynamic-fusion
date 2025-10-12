@@ -1,0 +1,3 @@
+project: test_misato_affinity
+entity: pguo # your wandb entity
+save_dir: {hydra.run.dir}

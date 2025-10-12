@@ -1,0 +1,17 @@
+_target_: src.data.residue_datamodule.ResidueDataModule
+
+graph_h5_path: 'data/data_files/residue_graph_data_distance_10.0_corr_aligned_0.3.h5' 
+pdb_list_train_path: 'data/splits/binding_site/train.txt'
+pdb_list_val_path: 'data/splits/binding_site/val.txt'
+pdb_list_test_path: 'data/splits/binding_site/test.txt'
+
+batch_size: 64
+num_workers: 1
+graph_type: ${graph_type}  # Use the graph_type from default.yaml
+
+
+
+
+
+
+
