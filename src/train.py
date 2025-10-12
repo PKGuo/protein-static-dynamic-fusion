@@ -11,7 +11,7 @@ from pytorch_lightning import Trainer, seed_everything
 from pytorch_lightning.loggers import TensorBoardLogger, WandbLogger
 import sys
 import os
-# 移除可能存在的代理环境变量
+# remove proxy environment variables
 os.environ.pop("HTTP_PROXY", None)
 os.environ.pop("HTTPS_PROXY", None)
 os.environ.pop("http_proxy", None)
