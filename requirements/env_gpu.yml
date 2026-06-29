@@ -1,3 +1,4 @@
+name: psdf-gpu
 prefix: ./venv
 channels:
   - nvidia
