@@ -1,3 +1,4 @@
+name: psdf-cpu
 prefix: ./venv
 channels:
   - pytorch

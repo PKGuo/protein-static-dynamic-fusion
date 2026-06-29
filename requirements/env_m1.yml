@@ -1,3 +1,4 @@
+name: psdf-m1
 prefix: ./venv
 channels:
   - pytorch
